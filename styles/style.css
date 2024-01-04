@@ -1,0 +1,140 @@
+/*esta seccion es de estilo para el cuerpo de la pagina web*/
+body {
+  background-color: rgb(255, 253, 240);
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del contenedor flex a columna */
+  align-items: center;
+  justify-content: flex-start; /* Alinea los elementos en la parte superior */
+  height: 100vh;
+}
+/*esta seccion es de estilo para el div del logo*/
+.logo {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del contenedor flex a columna */
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%; /* Ocupa todo el ancho del contenedor principal */
+}
+/*esta seccion es de estilo para la secion de acerca de nosotro*/
+.about-us {
+  background-color: #cdb66a;
+  margin-top: 20px; /* Ajusta el margen según sea necesario para separar el logo y la nueva sección */
+  font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial o a otra fuente profesional */
+  line-height: 1.6; /* Ajusta la altura de línea para mejorar la legibilidad */
+  color: #333; /* Cambia el color del texto a un tono más oscuro para mejorar la legibilidad */
+}
+
+.about-us h1 {
+  font-size: 2em; /* Ajusta el tamaño de la fuente para el encabezado principal */
+}
+
+.about-us h2 {
+  font-size: 1.5em; /* Ajusta el tamaño de la fuente para los subtítulos */
+
+}
+
+.about-us p {
+  font-size: 1.1em; /* Ajusta el tamaño de la fuente para los párrafos */
+  margin-bottom: 20px; /* Añade espacio en la parte inferior de los párrafos */
+}
+
+/*esta seccion es de estilo para la secion de conctactos*/
+
+.contactos {
+  background-color: #5a353d;
+  font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial o a otra fuente profesional */
+  line-height: 1.6; /* Ajusta la altura de línea para mejorar la legibilidad */
+  color: #fffefe; /* Cambia el color del texto a un tono más oscuro para mejorar la legibilidad */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto dentro de la sección */
+}
+
+.contactos h2 {
+  font-size: 1.8em; /* Ajusta el tamaño de la fuente para el título */
+  margin-bottom: 10px;
+}
+
+.contactos p {
+  font-size: 1.1em; /* Ajusta el tamaño de la fuente para los párrafos */
+  margin-bottom: 20px; /* Añade espacio en la parte inferior de los párrafos */
+}
+
+.contactos a {
+  text-decoration: none;
+
+}
+
+.contactos button {
+
+  font-size: 1em;
+  padding: 15px 15px;
+  margin-bottom: 20px; /* Ajusta el margen inferior de los botones según sea necesario */
+  background-color: #5a353d;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 200px; 
+  border: 2px solid #fff; /* Borde blanco de 2 píxeles */
+  transition: background-color 0.3s, color 0.3s;
+ }
+
+
+.contactos button:hover {
+  background-color: #218838; /* Cambia el color de fondo de los botones cuando se pasa el mouse */
+}
+
+/*la seccion del footer*/
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+
+/*la seccion del codigo QR*/
+
+.QR{
+
+  width: 500px; /* Ajusta el ancho del contenedor según tus preferencias */
+  height: 500px; /* Ajusta la altura del contenedor según tus preferencias */
+  /* Puedes agregar más estilos según sea necesario para el contenedor */
+}
+
+.QR img {
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  height: 100%; /* La imagen ocupará el 100% de la altura del contenedor */
+  /* Puedes agregar más estilos según sea necesario para la imagen */
+}
+
+/* Estilo para la burbuja de chat */
+.chat-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0f9d4b;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  user-select: none;
+  opacity: 0; /* Inicialmente establece la opacidad en 0 para ocultar la burbuja */
+  transition: opacity 1s ease-in-out; /* Transición de opacidad durante 1 segundo */
+}
+
+.welcome-message {
+  font-size: 14px;
+}
+
+.chat-bubble.active {
+  opacity: 1; /* Cuando la clase active está presente, establece la opacidad en 1 para mostrar la burbuja */
+}
+
